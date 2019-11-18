@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/contrasena"
+        app:layout_constraintStart_toStartOf="@+id/lblTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <EditText
+        android:id="@+id/inputContrasena"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/lblContrasena"
+        app:layout_constraintStart_toEndOf="@+id/lblContrasena"
+        app:layout_constraintTop_toTopOf="@+id/lblContrasena" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="@+id/lblTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="294dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblNombre"
+        app:layout_constraintStart_toEndOf="@+id/lblNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblNombre"
+        app:layout_constraintVertical_bias="0.521" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

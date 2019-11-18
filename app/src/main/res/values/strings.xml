@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Examen_Lancho</string>
+    <string name="usuario">Usuario:</string>
+    <string name="contrasenia">Contrasenia:</string>
+    <string name="HintUsuario">Introduce usuario</string>
+    <string name="HintContrasenia">Introduce contraseña</string>
+    <string name="texto_bienvenida">Bienvenid@s a la aplicación de Amigos de los museos</string>
+    <string name="made_by">by Lancho</string>
+    <string name="salir">SALIR</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="museos_interesado">Musesos en los que estas interesado:</string>
+    <string name="arte">ARTE</string>
+    <string name="ciencia">CIENCIA</string>
+    <string name="otros">OTROS</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="alta">ALTA</string>
+    <string name="indicar">Indicar</string>
+    <string name="nuevos_amigos">Tenemos X amigos nuevos</string>
+    <string name="que_desea_hacer">¿Qué desea hacer?</string>
+    <string name="listado_de_museos">LISTADO DE MUSEOS</string>
+    <string name="alta_nuevo_amigo">ALTA NUEVO AMIGO</string>
+    <string name="listado_amigos_del_museo">LISTADO AMIGOS DEL MUSEO</string>
+    <string name="verificacion_de_datos">Verificación De Datos</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="tipos_de_museos_seleccionados">Tipos de Museos Seleccionados:</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="rechazar">RECHAZAR</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="login">Login</string>
+</resources>

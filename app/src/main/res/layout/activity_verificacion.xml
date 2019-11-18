@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verificacion">
+
+    <TextView
+        android:id="@+id/lblVerificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/verificacion_de_datos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nombre"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblVerificacion" />
+
+    <TextView
+        android:id="@+id/lblNombreValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lblNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblNombre" />
+
+    <TextView
+        android:id="@+id/lblApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/apellidos"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+    <TextView
+        android:id="@+id/lblApellidosValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lblApellidos"
+        app:layout_constraintTop_toTopOf="@+id/lblApellidos" />
+
+    <TextView
+        android:id="@+id/lblSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sexo"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lblApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/lblApellidos" />
+
+    <TextView
+        android:id="@+id/lblSexoValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lblSexo"
+        app:layout_constraintTop_toTopOf="@+id/lblSexo" />
+
+    <TextView
+        android:id="@+id/lblMuseos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tipos_de_museos_seleccionados"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/lblSexo"
+        app:layout_constraintTop_toBottomOf="@+id/lblSexo" />
+
+    <TextView
+        android:id="@+id/lblMuseosValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lblMuseos"
+        app:layout_constraintTop_toTopOf="@+id/lblMuseos" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="@string/aceptar"
+        app:layout_constraintStart_toStartOf="@+id/lblMuseos"
+        app:layout_constraintTop_toBottomOf="@+id/lblMuseos"
+        android:onClick="aceptar"/>
+
+    <Button
+        android:id="@+id/btnRechazar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:text="@string/rechazar"
+        app:layout_constraintStart_toEndOf="@+id/btnAceptar"
+        app:layout_constraintTop_toTopOf="@+id/btnAceptar"
+        android:onClick="rechazar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

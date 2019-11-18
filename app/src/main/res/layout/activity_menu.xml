@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/lblPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/que_desea_hacer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMuseos"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/listado_de_museos"
+        app:layout_constraintEnd_toEndOf="@+id/btnAmigos"
+        app:layout_constraintStart_toStartOf="@+id/btnAmigos"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmigos"
+        android:onClick="listarMuseos"/>
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/alta_nuevo_amigo"
+        app:layout_constraintStart_toStartOf="@+id/lblPregunta"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta"
+        android:onClick="alta"/>
+
+    <Button
+        android:id="@+id/btnAmigos"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/listado_amigos_del_museo"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlta"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/btnAlta"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlta"
+        android:onClick="listarAmigos"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alta">
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/lblSexo"
+        app:layout_constraintTop_toTopOf="@+id/lblSexo">
+
+        <RadioButton
+            android:id="@+id/radioFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Sexo:"
+        app:layout_constraintStart_toStartOf="@+id/lblApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/lblApellidos" />
+
+    <TextView
+        android:id="@+id/lblApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Apellidos:"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+    <EditText
+        android:id="@+id/inputApellidos"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblApellidos"
+        app:layout_constraintStart_toEndOf="@+id/lblApellidos"
+        app:layout_constraintTop_toTopOf="@+id/lblApellidos"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/lblAlta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="DATOS A DAR DE ALTA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAlta" />
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/lblNombre"
+        app:layout_constraintStart_toEndOf="@+id/lblNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblNombre"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/lblMuseos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/museos_interesado"
+        app:layout_constraintStart_toStartOf="@+id/lblSexo"
+        app:layout_constraintTop_toBottomOf="@+id/lblSexo" />
+
+    <CheckBox
+        android:id="@+id/checkArte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/arte"
+        app:layout_constraintStart_toStartOf="@+id/lblMuseos"
+        app:layout_constraintTop_toBottomOf="@+id/lblMuseos" />
+
+    <CheckBox
+        android:id="@+id/checkCiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ciencia"
+        app:layout_constraintStart_toStartOf="@+id/checkArte"
+        app:layout_constraintTop_toBottomOf="@+id/checkArte" />
+
+    <CheckBox
+        android:id="@+id/checkOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otros"
+        app:layout_constraintStart_toStartOf="@+id/checkCiencia"
+        app:layout_constraintTop_toBottomOf="@+id/checkCiencia" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:onClick="cancelar"
+        android:text="@string/cancelar"
+        app:layout_constraintStart_toStartOf="@+id/lblMuseos"
+        app:layout_constraintTop_toBottomOf="@+id/lblMuseos" />
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/alta"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelar"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelar"
+        android:onClick="alta"/>
+
+    <EditText
+        android:id="@+id/inputOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="@string/indicar"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/checkOtros"
+        app:layout_constraintStart_toEndOf="@+id/checkOtros"
+        app:layout_constraintTop_toTopOf="@+id/checkOtros"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblAmigosNuevos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/nuevos_amigos"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
